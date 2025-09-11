@@ -36,3 +36,68 @@ android.splitScreen(); // Output: Android have a Split Screen
 
 console.log(ios instanceof SmartPhones); // Output: true
 console.log(android instanceof SmartPhones); // Output: true
+
+// Example: Vehicle hierarchy
+class Vehicle {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.isRunning = false;
+  }
+
+  start() {
+    this.isRunning = true;
+    console.log(`${this.make} ${this.model} has started.`);
+  }
+
+  stop() {
+    this.isRunning = false;
+    console.log(`${this.make} ${this.model} has stopped.`);
+  }
+}
+
+class Car extends Vehicle {
+  constructor(make, model, year, doors) {
+    super(make, model, year);
+    this.doors = doors;
+    this.type = "car";
+  }
+
+  honk() {
+    console.log("Beep beep!");
+  }
+}
+
+class Motorcycle extends Vehicle {
+  constructor(make, model, year, hasSidecar) {
+    super(make, model, year);
+    this.hasSidecar = hasSidecar;
+    this.type = "motorcycle";
+  }
+
+  wheelie() {
+    console.log(
+      this.hasSidecar ? "Cannot do wheelie with sidecar!" : "Doing a wheelie!"
+    );
+  }
+}
+
+// Creating instances
+const car = new Car("Toyota", "Corolla", 2022, 4);
+const motorcycle = new Motorcycle("Harley", "Davidson", 2021, false);
+
+// Using methods
+car.start();
+car.honk();
+car.stop();
+
+motorcycle.start();
+motorcycle.wheelie();
+motorcycle.stop();
+
+// Testing inheritance
+console.log(car instanceof Vehicle); // true
+console.log(car instanceof Car); // true
+console.log(car instanceof Motorcycle); // false
+console.log(motorcycle instanceof Vehicle); // true
