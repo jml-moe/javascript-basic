@@ -9,3 +9,7 @@ template literal recommended to do!,
 cz untuk mengurangi penggunaan operator matematika pada operasi non-matematika, eg: penggabungan string
 
 airbnb/javascript -> JS style guide
+
+<-- FUNCTION -->
+didalam function ada input/argument, juga ada output/return.
+return value-nya bisa ditampung kedalam variable.
