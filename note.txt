@@ -13,3 +13,16 @@ airbnb/javascript -> JS style guide
 <-- FUNCTION -->
 didalam function ada input/argument, juga ada output/return.
 return value-nya bisa ditampung kedalam variable.
+
+pure function: fn yg kita deklarasikan yg inputnya bergantung pada argument
+embedded function: dibuat ketika kita punya 1 buah fn dalam sebuah program, -> this is bad!
+block-scope: fn yang didalamnya ada variable, maka variable tersebut hanya bisa diakses di dalam fn tersebut, tidak bisa diakses di luar fn tersebut.
+arrow-function: fn yg lebih singkat dari named function.
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+
+const resultOne = add(5, 3);
+const resultTwo = sub(5, 3);
+
+console.log("Hasil : ", resultOne); // 8
+console.log("Hasil : ", resultTwo); // 2
