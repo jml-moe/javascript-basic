@@ -1,0 +1,6 @@
+var -> hoisted 
+const -> immutable
+let -> mutable
+
+array -> list of something
+object -> entity
