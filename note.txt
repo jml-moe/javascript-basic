@@ -4,3 +4,8 @@ let -> mutable
 
 array -> list of something
 object -> entity
+
+template literal recommended to do!,
+cz untuk mengurangi penggunaan operator matematika pada operasi non-matematika, eg: penggabungan string
+
+airbnb/javascript -> JS style guide
