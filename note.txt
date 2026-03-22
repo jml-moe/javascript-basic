@@ -26,3 +26,5 @@ const resultTwo = sub(5, 3);
 
 console.log("Hasil : ", resultOne); // 8
 console.log("Hasil : ", resultTwo); // 2
+
+strict-comparison (===) -> compare, if the value and data type is equal (true) --> WAJIB DIGUNAKAN
