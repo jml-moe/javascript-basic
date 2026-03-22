@@ -13,16 +13,22 @@ myTechStack.forEach((stack) => {
 // exercise
 function checkProtein(fruit, protein) {
   if (protein > 10) {
-    console.log(`${fruit} bagus untuk asupan protein`);
+    console.log(
+      `${fruit} dengan ${protein}gr protein bagus untuk asupan protein`,
+    );
     return;
   }
 
   if (protein > 5 && protein <= 10) {
-    console.log(`${fruit} sudah cukup untuk memenuhi kebutuhan protein`);
+    console.log(
+      `${fruit} dengan ${protein}gr protein sudah cukup untuk memenuhi kebutuhan protein`,
+    );
     return;
   }
 
-  console.log(`${fruit} belum memenuhi kenutuhan protein`);
+  console.log(
+    `${fruit} dengan ${protein}gr protein belum memenuhi kebutuhan protein`,
+  );
 }
 
 const fruits = [
