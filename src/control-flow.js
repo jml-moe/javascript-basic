@@ -13,3 +13,10 @@ function checkProtein(protein) {
 }
 
 checkProtein(100);
+
+// Ternary -> return a value based on condition tested
+const username = "Moe";
+
+const isMoe = username === "Moe" ? "Yes, this is Moe" : "No, this is Jamil";
+// kondisi yg di tes ? value yg di return ketika true : value di return ketika false
+console.log(isMoe);
